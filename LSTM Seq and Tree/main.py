@@ -35,7 +35,7 @@ batch_size = 10                            # Batch Size for training
 
 max_len_seq = 90                           # Maximum length of sentences
 max_len_path = 20                          # Maximum length of lca paths
-max_num_child = 20                         # Maximum no. of childrens in Dependency Tree
+max_num_childs = 20                         # Maximum no. of childrens in Dependency Tree
 
 lambda_l2 = 0.0001                         # lambda of l2-regulaizer
 init_learning_rate = 0.001                 # Initial Learning Rate
@@ -953,8 +953,8 @@ summary_writer = tf.summary.FileWriter(summary_dir, sess.graph)
 
 
 # Restoring the model from latest checkpoint
-model = tf.train.latest_checkpoint(model_dir)
-saver.restore(sess, model)
+# model = tf.train.latest_checkpoint(model_dir)
+# saver.restore(sess, model)
 
 
 # In[20]:
